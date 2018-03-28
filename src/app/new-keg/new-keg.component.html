@@ -1,0 +1,10 @@
+<div>
+  <label for="keg-form">Add Keg</label>
+  <input #newName placeholder="name">
+  <input #newBrand placeholder="brand">
+  <input #newPrice placeholder="price">
+  <input #newAbv placeholder="abv">
+  <input #newLevel placeholder="level">
+  <button (click)="create(newName.value, newBrand.value, newPrice.value, newAbv.value, newLevel.value); newName.value=''; newBrand.value=''; newPrice.value=''; newAbv.value=''; newLevel.value=''; ">Add Keg</button>
+
+</div>

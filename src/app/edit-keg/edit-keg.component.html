@@ -1,0 +1,9 @@
+<div *ngIf="childEditKeg">The Keg
+  <h3>{{childEditKeg.name}}</h3>
+  <input [(ngModel)]="childEditKeg.name">
+  <input [(ngModel)]="childEditKeg.brand">
+  <input [(ngModel)]="childEditKeg.price">
+  <input [(ngModel)]="childEditKeg.abv">
+  <input [(ngModel)]="childEditKeg.level">
+  <button (click)="finishEditing()">Done</button>
+</div>
