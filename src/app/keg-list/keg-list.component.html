@@ -1,5 +1,8 @@
 <div class="view-container">
   <div class="view-div" *ngFor="let keg of childKegList" id={{keg.name}}>
+
+    <div class="color-bar" style="height:{{levelCheck(keg)}}%;">
+
     <div class="keg-name">
       <h3>Keg Name: </h3>
       <h2>{{keg.name}}</h2>
@@ -20,5 +23,6 @@
     <button class="howler-bttn" (click)="howler(keg)">Howler</button>
     <button class="growler-bttn" (click)="growler(keg)">Growler</button>
   </div>
-  </div>
+</div>
+</div>
 </div>

@@ -16,7 +16,8 @@ import { EditKegComponent } from './edit-keg/edit-keg.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule, 
+    FormsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

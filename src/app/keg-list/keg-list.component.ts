@@ -1,5 +1,7 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter, SecurityContext } from '@angular/core';
 import { Keg } from '../models/keg.model';
+import {BrowserModule, DomSanitizer} from '@angular/platform-browser';
+import { SafeStyle } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-keg-list',
@@ -9,7 +11,9 @@ import { Keg } from '../models/keg.model';
 export class KegListComponent  {
   @Input() childKegList: Keg[];
   @Output() editClickSender = new EventEmitter();
-  constructor() { }
+  constructor(private sanitizer: DomSanitizer) {
+  //   this.html = sanitizer.bypassSecurityTrustStyle("{{levelCheck(keg)}}");
+  //  }
 
   editClick(keg: Keg){
     this.editClickSender.emit(keg);
@@ -27,4 +31,11 @@ export class KegListComponent  {
     keg.level -= 4;
   }
 
+  levelCheck(keg: Keg){
+    let x = 124;
+    let y = keg.level;
+    let z = x - y;
+    let result = (z/x) * 100;
+    return result;
+  }
 }
