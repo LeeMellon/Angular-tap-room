@@ -1,10 +1,16 @@
-<div>
+
+<div class="new-keg-container">
+  <button (click)="showAddDiv()">Add</button>
+
+<div class="new-keg">
   <label for="keg-form">Add Keg</label>
   <input #newName placeholder="name">
   <input #newBrand placeholder="brand">
   <input #newPrice placeholder="price">
   <input #newAbv placeholder="abv">
+  <input #newImg placeholder="img">
   <input #newLevel placeholder="level">
-  <button (click)="create(newName.value, newBrand.value, newPrice.value, newAbv.value, newLevel.value); newName.value=''; newBrand.value=''; newPrice.value=''; newAbv.value=''; newLevel.value=''; ">Add Keg</button>
+  <button (click)="create(newName.value, newBrand.value, newPrice.value, newAbv.value, newImg.value, newLevel.value); newName.value=''; newBrand.value=''; newPrice.value=''; newAbv.value=''; newImg.value=''; newLevel.value=''; ">Add Keg</button>
+</div>
 
 </div>

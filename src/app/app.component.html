@@ -1,3 +1,7 @@
-<app-keg-list [childKegList]="masterKegList"></app-keg-list>
 <app-new-keg (createSender)="newKeg($event)"></app-new-keg>
+<app-keg-list [childKegList]="masterKegList" (editClickSender)="editKedClicked($event)"></app-keg-list>
 <app-edit-keg [childEditKeg]="selectedEditKeg" (clickedDone)="finishEditing()"></app-edit-keg>
+
+
+
+<!-- (pintSender)="($event)" (howlerSender)="($event)" (growlerSender)="($event)" -->

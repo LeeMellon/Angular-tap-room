@@ -1,0 +1,72 @@
+.keg-img{
+  width: 150px;
+  height: 150px;
+  padding-right: 15px;
+}
+
+.view-div{
+  height: 150px;
+  width: 800px;
+  display: flex;
+  flex-flow: nowrap;
+  border: red solid 3px;
+  border-radius: 5px;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 10px;
+}
+
+.bttn-container{
+  width: 110px;
+  flex-direction: column;
+}
+
+.keg-name{
+  flex-direction: column;
+  padding-right: 15px;
+
+}
+
+.keg-brewery{
+  flex-direction: column;
+  padding-right: 15px;
+}
+.edit-bttn{
+  width: 110px;
+  height: 30px;
+  border-radius: 5px;
+  margin: 5px;
+  background-color: grey;
+  color: white;
+  font-size: 14pt;
+}
+
+.pint-bttn{
+  width: 110px;
+  height: 30px;
+  border-radius: 5px;
+  margin: 5px;
+  background-color: green;
+  color: white;
+  font-size: 14pt;
+}
+
+.howler-bttn{
+  width: 110px;
+  height: 30px;
+  border-radius: 5px;
+  margin: 5px;
+  background-color: blue;
+  color: white;
+  font-size: 14pt;
+}
+
+.growler-bttn{
+  width: 110px;
+  height: 30px;
+  border-radius: 5px;
+  margin: 5px;
+  background-color: red;
+  color: white;
+  font-size: 14pt;
+}

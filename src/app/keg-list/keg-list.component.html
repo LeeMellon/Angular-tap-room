@@ -1,3 +1,24 @@
-<ol>
-  <li *ngFor="let keg of childKegList">{{keg.name}}</li>
-</ol>
+<div class="view-container">
+  <div class="view-div" *ngFor="let keg of childKegList" id={{keg.name}}>
+    <div class="keg-name">
+      <h3>Keg Name: </h3>
+      <h2>{{keg.name}}</h2>
+    </div>
+    <div>
+      <img class="keg-img" src={{keg.img}} alt="{{keg.name}} icon">
+    </div>
+    <div class="keg-brewery">
+      <h3>Brewery:</h3>
+      <h2>{{keg.brand}}</h2>
+    </div>
+    <h4>Price:<br> ${{keg.price}}</h4>
+    <h4>ABV: <br>{{keg.abv}}%</h4>
+    <h4>Pints Remaining: <br>{{keg.level}}</h4>
+    <div class="bttn-container">
+    <button class="edit-bttn" (click)="editClick(keg)">Edit Keg</button>
+    <button class="pint-bttn" (click)="pint(keg)">Pint</button>
+    <button class="howler-bttn" (click)="howler(keg)">Howler</button>
+    <button class="growler-bttn" (click)="growler(keg)">Growler</button>
+  </div>
+  </div>
+</div>
